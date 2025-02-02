@@ -1,0 +1,21 @@
+<app-barra (sectionChange)="changeSection($event)" (darkModeToggle)="toggleDarkMode($event)" ></app-barra>
+
+
+<div class="container">
+<div class="content">
+  <div>
+    <ng-container *ngIf="selectedSection === 'home'" >
+        <app-home @fadeAnimation></app-home>
+    </ng-container>
+    <ng-container *ngIf="selectedSection === 'sobre-mim'">
+      <app-sobre-mim @fadeAnimation></app-sobre-mim>
+    </ng-container>
+    <ng-container *ngIf="selectedSection === 'projetos'">
+      <app-projetos @fadeAnimation></app-projetos>
+    </ng-container>
+    <ng-container *ngIf="selectedSection === 'contato'">
+      <app-contato @fadeAnimation></app-contato>
+    </ng-container>
+  </div>
+</div>
+</div>

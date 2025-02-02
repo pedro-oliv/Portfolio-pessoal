@@ -1,0 +1,22 @@
+<div style=" display: flex; height: 50px; width: 100%; font-weight: medium; padding-bottom: 0px;">
+    <h1>Meus Contatos</h1>
+    </div>
+<div class="btn-container" style="display:flex; height: 500px; width: 100%; justify-content: center; align-items: center; gap: 20px;">
+    <div class="btn-armor">
+        <a mat-fab class="cont-btn" href="https://github.com/pedro-oliv"><div class="img-container"><img src="/assets/25231.png" class="btn-img"></div></a>
+    </div>
+    <div class="btn-armor">
+        <a mat-fab class="cont-btn" href="https://www.linkedin.com/in/pedro-oliveira-0550672aa/"><div class="img-container"><img src="/assets/linkedin-logo.png" class="btn-img"></div></a>
+    </div>
+    <div class="btn-armor">
+        <a mat-fab class="cont-btn" href="https://www.instagram.com/screwed_attack/"><div class="img-container"><img src="/assets/free-instagram-logo-icon-3497-thumb.png" class="btn-img"></div></a>
+    </div>
+    <div class="btn-armor" style="position: relative; display: inline-block;">
+        <a mat-fab class="cont-btn" (click)="toggleImage()"><div class="img-container"><img src="/assets/icons8-whatsapp-512.png" class="btn-img" ></div></a>
+        <div *ngIf="showImage" class="bubble">
+            <img class="qr-img" src="/assets/qrcod.jpg">
+        </div>
+    </div>
+</div>
+
+

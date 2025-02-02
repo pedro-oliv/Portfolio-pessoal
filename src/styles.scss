@@ -1,0 +1,228 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #4ee4e4; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family:  Roboto, "Helvetica Neue", sans-serif;
+  } 
+
+.content {
+    background: white;
+    width: 1500px;
+    min-height: 300px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+  
+
+mat-toolbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    gap: 20px;
+  }
+  
+  
+
+  button.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+  }
+
+  .dark{
+    body{
+        background-color: #1e3a8a;
+        color: white;
+    }
+
+    .content{
+        background-color: black;
+        color: white;
+    }
+    .avatar-container{
+      border: 3px solid white;
+    }
+    .gif-container{
+      border: 3px solid white;
+    }
+    .project-item{
+      border: 3px solid white;
+    }
+    .project-item:hover{
+      border:3px solid #1e3a8a;
+    }
+    .project-title{
+      background-color: #1e3a8a;
+      font-weight: normal;
+    }
+    .project-desc{
+      background-color: black;
+    }
+    .btn-img{
+      filter: invert(1);
+    }
+    a.cont-btn{
+      background-color: black;
+    }
+    .bubble{
+      border: 3px solid white;
+    }
+    .img-container:hover{
+      border: 3px solid #1e3a8a;
+    }
+
+  }
+
+  *{
+    transition: background-color 500ms ease, color 65ms ease, border 500ms ease, filter 500ms ease;
+  }
+
+  .avatar-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gif-container {
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  }
+
+  .project-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 25px;
+  }
+
+  .project-item{
+    height: 280px;
+    width: 230px;
+    border: 3px solid black;
+    border-radius: 7px;
+    object-fit:cover;
+    overflow: hidden;
+    cursor:pointer;
+    float: left;
+  }
+  
+  .project-item:hover{
+    border: 3px solid #4ee4e4;
+  }
+
+  .project-title{
+    background-color: #4ee4e4; 
+    height: 14%; 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-weight: bold;
+  }
+  
+  .project-desc{
+    display: flex; 
+    background-color: white; 
+    height:38%; 
+    width: 100%; 
+    font-weight: medium; 
+    padding-left: 4px;
+  }
+
+  a.cont-btn{
+    background-color: white;
+    height: 130px; width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  }
+
+  .btn-img{
+    height: 127px;
+    width: 127px;
+    border-radius: 17px;
+  }
+
+  .bubble {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+    border: 3px solid black;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+  .img-container{
+    display: flex;
+    height: 127px;
+    width: 127px;
+    transition: border 500ms ease;
+    border: 3px solid black;
+    border-radius: 21px;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-container:hover{
+    border: 3px solid #4ee4e4;
+  }

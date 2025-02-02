@@ -1,0 +1,13 @@
+    <mat-toolbar color="primary" style="width: 100%;">
+      <span style="float: left;">
+        Portfolio
+      </span>
+      <span class="spacer"></span>
+      <button mat-button [class.active]="selected === 'sobre-mim'" (click)="select('sobre-mim')">Sobre</button>
+      <button mat-button [class.active]="selected === 'projetos'" (click)="select('projetos')">Projetos</button>
+      <button mat-button [class.active]="selected === 'contato'" (click)="select('contato')">Contato</button>
+      <mat-icon>{{isDarkMode ? 'dark_mode' : 'light_mode'}}</mat-icon>
+      <mat-slide-toggle (change)="toggleDarkMode($event.checked)">
+      </mat-slide-toggle>
+      <span class="spacer"></span>
+    </mat-toolbar>
